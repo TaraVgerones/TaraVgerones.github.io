@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+  width: 100%;
+  background-color: #c7e9c0;
+}
+
+form {
+  background-color: #fff;
+  position: absolute;
+  width: 350px;
+  height: 290px;
+  padding: 15px;
+  margin: 5px 850px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 6px -7px;
+}
+
+form input {
+  display: flex;
+  background-color: #fff;
+  border: 1.5px solid rgb(200, 200, 200);
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  color: black;
+  font-family: 'Segoe UI';
+  box-sizing: border-box;
+}
+
+button { /*design of buttons*/
+  border: none;
+  background-color: #41ab5d;
+  color: white;
+  margin: auto;
+  width: 283px;
+  display: block;
+  border-radius: 5px;
+  padding: 10px 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.f-pws { /*forget password */
+  display: block;
+  width: 200px;
+  margin: auto;
+  color: #00441b;
+  padding-left: 80px;
+  font-family: 'Segoe UI';
+  font-weight: 400;
+}
+
+
+.line { /*for the line or separator*/
+  border-top: 1px solid #222;
+  opacity: 0.2;
+}
+
+
+.bnt2 { /*create new account button*/
+  width: 180px;
+  font-size: 14px;
+  background-color: #5D8736;
+  text-align: center;
+}
+
+.bnt2:hover{
+  background-color: #3E7B27;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.f-container { /*form container*/
+  width: 300px;
+  margin-left: 300px;
+  margin-top: 30vh;
+  font-family: "Segoe UI", Roboto, "San Francisco";
+}
+
+.f-container img { /*image container*/
+  width: 200px;
+  display: flex;
+}
+
+.f-container p {
+  font-size: 20px;
+  font-weight: 600;
+  
+}
+
