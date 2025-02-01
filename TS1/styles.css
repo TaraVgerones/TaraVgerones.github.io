@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+* {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body{
+    background: #C4D9FF;
+}
+
+.new-bg {
+    background: #C5BAFF; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px 20px 30px auto;
+    height: 1150px;
+    padding: 20px;
+    box-shadow: 0 2px 20px black;
+}
+
+.row-1,
+.row-2 {
+    display: flex;
+}
+
+.box {
+    width: calc(100% / 3);
+    height: 300px;
+}
+
+.col-1 {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-1 > figure > img {
+    height: 230px;
+    width: 230px;
+    outline: solid 2px;
+}
+
+.col-2 {
+    margin-left: 15px;
+    width: 65%;
+}
+
+.col-2 h1 {
+    margin-top: 40px;
+    margin-bottom: auto;
+    font-size: 35px;
+}
+
+hr {
+    outline: 1px solid black;
+}
+
+.left {
+    flex: 1;
+    padding: 30px;
+}
+
+h2 {
+    background: #FBF4DB;
+    padding: 15px;
+    margin: 30px 0;
+    font-weight: 800;
+    font-size: 20px;
+    border-radius: 0 50px 50px 0;
+}
+
+h3 {
+    font-style: italic;
+}
+
+.right {
+    flex: 1;
+    padding: 30px;
+}
+
+.right h3 {
+    margin-bottom: 15px;
+}
+
+button {
+    position: absolute;
+    background: linear-gradient(#E5989B,#FFCDB2);
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: linear-gradient(#A294F9, #CDC1FF);
+    ;
+}
+
+/* not fully responsive */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .container{
+        width: 95%;
+        height: auto;
+    }
+    h2{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 600px){
+    .row-1,
+    .row-2{
+        flex-direction: column;
+    }
+    .left,
+    .right{
+        flex: none;
+        width: 100%;
+    }
+    .container{
+        width: 95%;
+        height: auto;
+    }
+    h2{
+        font-size: 15px;
+    }
+}
