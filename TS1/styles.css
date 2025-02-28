@@ -39,7 +39,7 @@ body{
     justify-content: center;
 }
 
-.col-1 > figure > img {
+.col-1 > .picture > img {
     height: 230px;
     width: 230px;
     outline: solid 2px;
