@@ -5,7 +5,7 @@ function toggleBox(day) {
     if (animate) return;  // the function will exit if an animation is happening
     animate = true;  
 
-    var selectedColor = getComputedStyle(document.querySelector(`.${day}-btn`)).backgroundColor; // Gets the button color
+    var selectedColor = getComputedStyle(document.querySelector(`.${day}-btn`)).backgroundColor; // gets the button color
 
     if (activeBox) {
         activeBox.style.transition = "top 1.8s ease-out, background-color 1.8s ease-out, border-width 1.8s ease-out";
@@ -16,14 +16,14 @@ function toggleBox(day) {
             animate = false;  
         }, 1200);  
     } else {
-        animate = false;  
+        animate = false;  // allows new animations to happen after the current one is done
     }
 
-    // Create New Box
+    // create New Box
     var newfloatingBox = document.createElement("div");
     newfloatingBox.classList.add("motion-box");  
 
-    //designing the new box
+    // designing the new box
     newfloatingBox.style.position = "absolute";
     newfloatingBox.style.left = "65%";  
     newfloatingBox.style.transform = "translateX(-50%)";  
@@ -34,7 +34,7 @@ function toggleBox(day) {
     newfloatingBox.style.transition = "top 0.7s ease-out, background-color 0.7s ease-out, border-width 0.7s ease-out, transform 0.7s ease-in-out";
     newfloatingBox.style.top = "-450px";  
 
-    document.body.appendChild(newfloatingBox); // Adds box to the page
+    document.body.appendChild(newfloatingBox); // adds box to the page
 
     setTimeout(() => {
         newfloatingBox.style.top = "30%";  
@@ -45,5 +45,5 @@ function toggleBox(day) {
         newfloatingBox.style.backgroundColor = "rgba(0,0,0,0)"; // makes the box transparent
     }, 600);
 
-    activeBox = newfloatingBox;  // Updates the activeBox reference
+    activeBox = newfloatingBox;  // updates the activeBox reference
 }
