@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+* {
+    font-family: "Orbitron", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+}
+
+body {
+    background: linear-gradient(40deg, #f9d7c4, #c1e0d6, #93b3bd, #efb3c0, #e6819d);
+    background-size: 350% 350%;
+    animation: gradient-animation 25s ease infinite;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+.calculator {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #000;
+    background-color: #f6cca1;
+}
+
+ #display-input  {
+    margin: auto;
+    height: 60px;
+    padding: 15px;
+    margin-bottom: 25px;
+    width: auto;
+    max-width: 300px;
+    display: flex;
+    border-radius: 20px;
+    text-align: right;
+    font-size: 30px;
+    color: black;
+    background-color: #EEF0F3;
+    box-shadow: inset 3px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    height: 65px;
+    width: 65px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    margin: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 3px 8px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+button:hover {
+    background-color: #eeeeee;
+}
+
+#clear {
+    background-color: #bdbdbd;
+    color: #000;
+}
+
+.btn-number {
+    background-color: #c3eaff;
+    color: #000;
+}
+
+button[id="0"]{
+    width: 142px;
+}
+
+.btn-operator {
+    background-color: #e6819d;
+    color: #ffe6e7;
+}
+
+.btn-equal{
+    background-color: #bdbdbd;
+    color: #000;
+    height: 140px;
+}
+
+/* BG animation */
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    25% { background-position: 50% 100%; }
+    50% { background-position: 100% 50%; }
+    75% { background-position: 50% 0%; }
+    100% { background-position: 0% 50%; }
+}
