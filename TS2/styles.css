@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", serif;
+    display: flex;
+    height: 100vh;
+    background-image: url('bg-design.png');
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    gap: 20px;
+    width: 90%;
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Buttons main container */
+.buttons-container{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    max-width: 300px;
+    border-radius: 10px;
+    padding: 35px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    background-color: #fff6fb;
+}
+
+button {
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 32px;
+    color: #404040;
+    border-radius: 10px;
+    border: black solid 2px;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+button:hover{
+    transform: scale(1.1);
+    filter: brightness(1.2) contrast(1.05);
+}
+
+/* Day Buttons Color */
+.mon-btn { background-color: #f8e2a8; }
+.tue-btn { background-color: #efb1b1; }
+.wed-btn { background-color: #8bccec; }
+.thur-btn { background-color: #b2cfc4; }
+.fri-btn { background-color: #fab497; }
+.sat-btn { background-color: #b5b2cf; }
+.sun-btn { background-color: #bf9d85; }
+
+/* Animation */
+.motion-area{
+    position: relative;
+    flex: 1;
+    width: 80vw; 
+    overflow: hidden;
+}
+
+/* flowing boxes */
+.motion-box{
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    border-radius: 10px;
+    opacity: 1;
+    transition: top 1.0s ease-in-out, background-color 0.5s ease-in-out, opacity 0.7s ease-in-out;
+}
+
