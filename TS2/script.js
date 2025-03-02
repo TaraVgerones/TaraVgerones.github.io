@@ -1,7 +1,7 @@
 var activeBox = null;  // track of the currently active floating box
 var animate = false;  // prevents overlapping animations
 
-function toggleBox(day) {
+function showBox(day) {
     if (animate) return;  // the function will exit if an animation is happening
     animate = true;  
 
